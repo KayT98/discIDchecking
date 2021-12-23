@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <!----Boostraps and momentjs---->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment-timezone-with-data-10-year-range.min.js"></script>
+    <title>Discord Creation Date</title>
+</head>
+<body>
+    
+    <script src="main.js"></script>
+
+    <div id="container">
+            <h1>Discord ID Checker</h1>     
+        <div class="mb-3">
+            <p style="color: red; font-weight: bold">Please Enter Number Only</p>
+            <strong>Discord ID:</strong> 
+                <input type="text" name="discordid" id="id" maxlength="18" size="17"  placeholder="discord id here"> 
+                <button type="button" class="btn btn-outline-primary" onclick="convert(document.getElementById('id').value)">Check</button>
+        </div>
+
+        <hr style="border-color: black; width:90%">
+
+        <!----Show results---->
+        <div id="results">
+            <strong>Creation date: </strong> 
+            <span id="date12"></span>
+            <br>
+            <strong>Time Zone: </strong>
+            <span id="timezone"></span>
+            <br>
+            <strong>How long ago? : </strong> 
+            <span id="ago"></span>
+        </div>
+    </div>
+            <br>
+        <!----Q&A section---->
+    <div id="QA">
+            <h1>Q&A</h1>
+        <h3>What is this web page for?</h3>
+            <p>&laquo; This web page is to check Discord creation date. You can check server creation date as well &raquo;</p>
+            <hr style="border-color: black; width:90%">
+        <h3>How do I find the ID?</h3>
+            <p>&laquo; It's very simple, go to your Setting &rarr; Advanced &rarr; Turn on Developer Mode &rarr; Click on the 3 dots next to your name in Setting and Copy ID or you can right-click on anyone profile pics and copy their IDs &raquo;</p>
+            <hr style="border-color: black; width:90%">
+        <h3>Will this webpage store our IDs?</h3>
+            <p>&laquo; The answer is no, the web page won't store any IDs, since the script file doesn't have any functions that can keep the input IDs &raquo;</p>
+            <hr style="border-color: black; width:90%">
+        <h3>About the web page</h3>    
+            <p>&laquo; This web page is alternative web of <a href="https://hugo.moe/discord/discord-id-creation-date.html">Hugo.moe</a>. I made it just for learning purposes. Please support them!! &raquo;</p>
+    </div>
+</body>
+</html>
