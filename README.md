@@ -6,4 +6,3 @@
 
 • Any tips, ideas, suggestions will be greatly appreciated.
 
-• If you used their JS code, please credit them.
