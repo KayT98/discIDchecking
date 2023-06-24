@@ -1,4 +1,3 @@
-//https://github.com/hugonun/discordid2date
 
 function convert(id) {
     var unix = getUnixTime(id.toString());
